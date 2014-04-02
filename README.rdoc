@@ -1,0 +1,3 @@
+== Search with Rails
+
+Code from the `Implementing a search in Rails` class.

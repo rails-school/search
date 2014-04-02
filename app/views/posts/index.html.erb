@@ -1,0 +1,16 @@
+<h1><%= @title %></h1>
+
+<%= form_tag '/searches', method: :get do %>
+  <%= text_field_tag :query, params[:query] %>
+  <%= submit_tag 'Search' %>
+<% end %>
+
+<ul>
+  <% @posts.each do |post| %>
+    <li style="border: 1px solid black; padding: 5px; margin: 5px;">
+      <%= post.title %>
+      <br/>
+      <%= post.body %>
+    </li>
+  <% end %>
+</ul>
